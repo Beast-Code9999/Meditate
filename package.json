@@ -1,0 +1,19 @@
+{
+  "name": "meditate",
+  "version": "1.0.0",
+  "description": "Dates:   Decenber 18th 2022: The birth of Meditate repo",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beast-Code9999/Meditate.git"
+  },
+  "author": "Beast Code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beast-Code9999/Meditate/issues"
+  },
+  "homepage": "https://github.com/Beast-Code9999/Meditate#readme"
+}
