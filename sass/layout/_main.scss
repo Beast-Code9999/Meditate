@@ -1,9 +1,14 @@
 .main {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    
+    width: 60%;
+    height: 30%;
+    background-color: $color-primary;
+    border-radius: 1rem;
 }
 
 .share {
@@ -13,7 +18,10 @@
 .circle {
 
     &__white {
-
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        background: white;
     }
 
 

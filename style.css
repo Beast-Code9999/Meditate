@@ -79,6 +79,23 @@ footer img:hover {
   transform: rotate(360deg) scale(1.5); }
 
 /* end of footer */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  width: 60%;
+  height: 30%;
+  background-color: #2196f3;
+  border-radius: 1rem; }
+
+.circle__white {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: white; }
+
 .circle__blue {
   width: 25rem;
   height: 25rem;
