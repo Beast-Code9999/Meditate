@@ -45,3 +45,48 @@ header {
   justify-content: center;
   width: 100%;
   padding: 2rem; }
+
+/* start of footer */
+footer {
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+  padding: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lightblue; */ }
+
+footer a {
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700; }
+
+footer img {
+  width: 3rem;
+  height: auto;
+  transition: transform .7s ease-in-out;
+  margin-left: 1rem; }
+
+footer img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(360deg) scale(1.5); }
+
+/* end of footer */
+.circle__blue {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: #4faaf5; }
+
+.circle__play {
+  width: 10rem; }
+
+.circle__reload {
+  width: 10rem; }

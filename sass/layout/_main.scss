@@ -1,0 +1,38 @@
+.main {
+
+}
+
+.container {
+    
+}
+
+.share {
+
+}
+
+.circle {
+
+    &__white {
+
+    }
+
+
+    &__blue {
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        background-color: $color-secondary;
+    }
+
+    &__play {
+        width: 10rem;
+    }
+
+    &__reload {
+        width: 10rem;
+    }
+}
+
+.instruction-text {
+
+}
