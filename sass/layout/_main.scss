@@ -11,6 +11,8 @@
     border-radius: 1rem;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .share {
@@ -31,6 +33,7 @@
         height: 25rem;
         border-radius: 50%;
         background: white;
+        position: absolute;
     }
 
 
@@ -51,5 +54,8 @@
 }
 
 .instruction-text {
-
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    font-size: 1.6rem;
 }

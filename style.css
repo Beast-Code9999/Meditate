@@ -90,7 +90,9 @@ footer img:hover {
   background-color: #2196f3;
   border-radius: 1rem;
   position: relative;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .share {
   position: absolute;
@@ -103,7 +105,8 @@ footer img:hover {
   width: 25rem;
   height: 25rem;
   border-radius: 50%;
-  background: white; }
+  background: white;
+  position: absolute; }
 
 .circle__blue {
   width: 25rem;
@@ -116,3 +119,9 @@ footer img:hover {
 
 .circle__reload {
   width: 10rem; }
+
+.instruction-text {
+  position: absolute;
+  bottom: 1rem;
+  color: white;
+  font-size: 1.6rem; }
