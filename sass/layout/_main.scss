@@ -9,17 +9,22 @@
     height: 38rem;
     background-color: $color-primary;
     border-radius: 1rem;
+    position: relative;
+    display: flex;
 }
 
 .share {
-    
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
 
     & > img {
-        width: 4rem;
+        width: 3rem;
     }
 }
 
 .circle {
+    
 
     &__white {
         width: 25rem;

@@ -88,10 +88,16 @@ footer img:hover {
   width: 65rem;
   height: 38rem;
   background-color: #2196f3;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  position: relative;
+  display: flex; }
 
-.share > img {
-  width: 4rem; }
+.share {
+  position: absolute;
+  right: 3rem;
+  top: 1rem; }
+  .share > img {
+    width: 3rem; }
 
 .circle__white {
   width: 25rem;
