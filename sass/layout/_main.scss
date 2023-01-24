@@ -26,7 +26,9 @@
 }
 
 .circle {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__white {
         width: 25rem;
@@ -34,6 +36,7 @@
         border-radius: 50%;
         background: white;
         position: absolute;
+        // bottom: 5rem;
     }
 
 
@@ -45,11 +48,14 @@
     }
 
     &__play {
-        width: 10rem;
+        width: 12rem;
+        position: absolute;
     }
 
     &__reload {
-        width: 10rem;
+        width: 12rem;
+        position: absolute;
+        display: none;
     }
 }
 
