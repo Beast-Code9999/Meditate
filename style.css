@@ -85,10 +85,13 @@ footer img:hover {
   align-items: center; }
 
 .container {
-  width: 60%;
-  height: 30%;
+  width: 65rem;
+  height: 38rem;
   background-color: #2196f3;
   border-radius: 1rem; }
+
+.share > img {
+  width: 4rem; }
 
 .circle__white {
   width: 25rem;

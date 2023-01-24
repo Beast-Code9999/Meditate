@@ -5,14 +5,18 @@
 }
 
 .container {
-    width: 60%;
-    height: 30%;
+    width: 65rem;
+    height: 38rem;
     background-color: $color-primary;
     border-radius: 1rem;
 }
 
 .share {
+    
 
+    & > img {
+        width: 4rem;
+    }
 }
 
 .circle {
