@@ -106,9 +106,11 @@ footer img:hover {
 .share {
   position: absolute;
   right: 3rem;
-  top: 1rem; }
+  top: 1.5rem; }
   .share > img {
     width: 3rem; }
+  .share:hover {
+    cursor: pointer; }
 
 .circle {
   display: flex;
@@ -120,21 +122,29 @@ footer img:hover {
     border-radius: 50%;
     background: white;
     position: absolute; }
+    .circle__white:hover {
+      cursor: pointer; }
   .circle__blue {
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
     background-color: #4faaf5;
     box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+    .circle__blue:hover {
+      cursor: pointer; }
   .circle__play {
     width: 12rem;
     position: absolute;
     translate: 1rem 0; }
+    .circle__play:hover {
+      cursor: pointer; }
   .circle__reload {
     width: 10rem;
     position: absolute;
     translate: .5rem;
     display: none; }
+    .circle__reload:hover {
+      cursor: pointer; }
 
 .instruction-text {
   position: absolute;
