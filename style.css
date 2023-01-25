@@ -130,7 +130,7 @@ footer img:hover {
     height: 25rem;
     border-radius: 50%;
     background-color: #4faaf5;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1); }
     .circle__blue:hover {
       cursor: pointer; }
   .circle__play {
