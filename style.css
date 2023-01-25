@@ -97,7 +97,7 @@ footer img:hover {
 
 .container {
   width: 65rem;
-  height: 40rem;
+  height: 45rem;
   background-color: #2196f3;
   border-radius: 1rem;
   position: relative;
@@ -150,6 +150,6 @@ footer img:hover {
 
 .instruction-text {
   position: absolute;
-  bottom: 1.6rem;
+  bottom: 3rem;
   color: white;
   font-size: 2rem; }
