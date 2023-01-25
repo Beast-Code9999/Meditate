@@ -7,6 +7,12 @@
 // breathe in
 // breathe out
 
+function modifyText() { // dynamically change .instruction-text 
+
+}
+
+
+
 // footer script
 function addDynamicFooterDate() {
     const footer = document.querySelector('.footer__year');
