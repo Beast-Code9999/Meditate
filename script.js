@@ -11,7 +11,9 @@ function modifyText() { // dynamically change .instruction-text
 
 }
 
+function modifyCircle() { // dynamically add circle css to make it expand and shrink
 
+}
 
 // footer script
 function addDynamicFooterDate() {
