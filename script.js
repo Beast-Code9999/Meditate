@@ -16,11 +16,20 @@ circleParent.addEventListener('click', (e) => {
 
 function modifyText() { // dynamically change .instruction-text 
     const instructionText = document.querySelector('.instruction-text');
-    instructionText.textContent = 'Hello there'
+    instructionText.classList.add('fadeInOut')
+    instructionText.textContent = 'Bring awareness to your breath'
+
+    setInterval( funct, 5000 )
+
+    function funct() {
+
+    }
+
+
 }
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
-
+    
 }
 
 // footer script
