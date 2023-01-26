@@ -69,7 +69,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: lightblue; */ }
+  /* background-color: lightblue; */
+  color: #2196f3; }
 
 footer a {
   text-decoration: none;
