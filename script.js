@@ -7,8 +7,16 @@
 // breathe in
 // breathe out
 
-function modifyText() { // dynamically change .instruction-text 
+const circleParent = document.querySelector('.circle');
 
+circleParent.addEventListener('click', (e) => {
+    console.log("THIS WORKS")
+    modifyText()
+})
+
+function modifyText() { // dynamically change .instruction-text 
+    const instructionText = document.querySelector('.instruction-text');
+    instructionText.textContent = 'Hello there'
 }
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
