@@ -28,8 +28,15 @@ function modifyText() { // dynamically change .instruction-text
     clearInterval( repeat )
 }
 
+modifyCircle()
+
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
-    
+    const circleWhite = document.querySelector('.circle__white');
+    const circleBlue = document.querySelector('.circle__blue');
+    const playImg = document.querySelector('.circle__play');
+    const reloadImg = document.querySelector('.circle__reload');
+
+    console.log(circleWhite, circleBlue, playImg, reloadImg)
 }
 
 // footer script
