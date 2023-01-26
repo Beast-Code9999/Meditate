@@ -19,13 +19,13 @@ function modifyText() { // dynamically change .instruction-text
     instructionText.classList.add('fadeInOut')
     instructionText.textContent = 'Bring awareness to your breath'
 
-    setInterval( funct, 5000 )
+    const repeat = setInterval( funct, 5000 )
 
     function funct() {
 
     }
 
-
+    clearInterval( repeat )
 }
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
