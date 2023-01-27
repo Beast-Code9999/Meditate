@@ -22,14 +22,18 @@
 
 @keyframes expandCircle {
   0% {
-    width: 5rem; }
+    width: 5rem;
+    height: 5rem; }
   100% {
-    width: 25rem; } }
+    width: 25rem;
+    height: 25rem; } }
 
 @keyframes shrinkCircle {
   0% {
-    width: 25rem; }
+    width: 25rem;
+    height: 25rem; }
   100% {
+    width: 5rem;
     width: 5rem; } }
 
 .fadeInOut {
@@ -43,6 +47,9 @@
 
 .expand-circle {
   animation: expandCircle 5s; }
+
+.shrink-circle {
+  animation: shrinkCircle 5s; }
 
 *,
 *::before,

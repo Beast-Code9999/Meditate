@@ -73,7 +73,7 @@ function modifyCircle() { // dynamically add circle css to make it expand and sh
     playImg.style.display = "none";
     reloadImg.style.display = "none";
 
-    circleWhite.classList.add('')
+    circleWhite.classList.add('shrink-circle')
     let cycle = 1;
     let timer = setInterval(onTick, 5000);
     
