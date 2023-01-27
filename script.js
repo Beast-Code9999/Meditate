@@ -62,12 +62,19 @@ function modifyText() { // dynamically change .instruction-text
     
     
     function onTick() {
-        instructionText.classList.remove('fadeInOut');
-        instructionText.classList.add('fadeInOut');
+        // instructionText.classList.remove('fadeInOut');
+        // instructionText.classList.add('fadeInOut');
+
+        instructionText.classList.toggle('fadeInOut');
+        instructionText.classList.toggle('fadeInOutTwo');
 
         const sentence = sentences[index];
         instructionText.textContent = sentence;
         index++
+        if(index === sentences.length) {
+            instructionText.classList.remove('fadeInOut');
+            instructionText.classList.remove('fadeInOutTwo');
+        }
         if(index === sentences.length) {
             complete();
             return

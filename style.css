@@ -6,8 +6,19 @@
   100% {
     opacity: 0; } }
 
+@keyframes fadeInOutTwo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 .fadeInOut {
   animation: fadeInOut 5s; }
+
+.fadeInOutTwo {
+  animation: fadeInOutTwo 5s; }
 
 *,
 *::before,
