@@ -71,7 +71,39 @@ function modifyCircle() { // dynamically add circle css to make it expand and sh
     const playImg = document.querySelector('.circle__play');
     const reloadImg = document.querySelector('.circle__reload');
 
-    console.log(circleWhite, playImg, reloadImg);
+    playImg.style.display = "none";
+    reloadImg.style.display = "none";
+    let cycle = 1;
+    let timer = setInterval(onTick, 5000);
+    
+    function onTick() {
+
+
+        if( cycle % 2 == 0) {
+
+        } else if( cycle % 2 !== 0) {
+
+        }
+        // const sentence = sentences[cycle];
+        cycle++
+
+        if(cycle === 13) {
+
+            complete();
+            return
+        }
+    }
+    
+    function complete() {
+        clearInterval(timer);
+        timer = null;
+    }
+    
+    setTimeout(()=> {
+        reloadImg.style.display = "flex"
+    },65000)
+
+    // console.log(circleWhite, playImg, reloadImg);
 }
 
 // footer script
