@@ -8,14 +8,20 @@
 // breathe out
 
 const circleParent = document.querySelector('.circle');
+let clickAgain = true;
 
 circleParent.addEventListener('click', (e) => {
-    console.log("THIS WORKS")
-    modifyText()
+    console.log("THIS WORKS");
+    if( clickAgain == true ) {
+        modifyText();
+        modifyCircle();
+    }
+    clickAgain = false
 })
 
 function modifyText() { // dynamically change .instruction-text 
     const instructionText = document.querySelector('.instruction-text');
+    instructionText.classList.remove('fadeOut');
     instructionText.classList.add('fadeInOut');
     instructionText.textContent = 'Bring awareness to your breath';
 
@@ -35,7 +41,7 @@ function modifyText() { // dynamically change .instruction-text
     ]
     
     let index = 0;
-    let timer = setInterval(onTick, 5000)
+    let timer = setInterval(onTick, 5000);
     
     
     function onTick() {
@@ -48,10 +54,11 @@ function modifyText() { // dynamically change .instruction-text
         const sentence = sentences[index];
         instructionText.textContent = sentence;
         index++
-        
+
         if(index === sentences.length) {
             instructionText.classList.remove('fadeInOut');
             instructionText.classList.remove('fadeInOutTwo');
+            instructionText.classList.add('fadeOut');
             complete();
             return
         }
@@ -59,33 +66,20 @@ function modifyText() { // dynamically change .instruction-text
     
     function complete() {
         clearInterval(timer);
+        clickAgain = true;
         timer = null;
     }
-    // setTimeout(() => {
-    //     instructionText.classList.remove('fadeInOut');
-    //     setTimeout(()=> {
-    //         instructionText.classList.add('fadeInOut')
-    //         instructionText.textContent = 'Breathe in';
-    //         setTimeout(()=> {
-    //             instructionText.classList.remove('fadeInOut');
-    //             setTimeout(()=> {
-    //                 instructionText.classList.add('fadeInOut')
-    //                 instructionText.textContent = 'Breathe ';
-    //             })
-    //         }, 2500)
-    //     }, 2500 )
-    // }, 2500)
 }
 
 modifyCircle()
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
     const circleWhite = document.querySelector('.circle__white');
-    const circleBlue = document.querySelector('.circle__blue');
+    // const circleBlue = document.querySelector('.circle__blue');
     const playImg = document.querySelector('.circle__play');
     const reloadImg = document.querySelector('.circle__reload');
 
-    console.log(circleWhite, circleBlue, playImg, reloadImg)
+    console.log(circleWhite, playImg, reloadImg);
 }
 
 // footer script
