@@ -218,3 +218,6 @@ footer img:hover {
   bottom: 3rem;
   color: white;
   font-size: 2rem; }
+  @media (max-width: 25em) {
+    .instruction-text {
+      font-size: 1.6rem; } }

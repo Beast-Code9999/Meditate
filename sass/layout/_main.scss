@@ -101,5 +101,7 @@
     color: white;
     font-size: 2rem;
 
-    
+    @include responsive( 400 ) {
+        font-size: 1.6rem;
+    }
 }
