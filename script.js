@@ -28,34 +28,24 @@ function modifyText() { // dynamically change .instruction-text
     const sentences = [
         "Breathe in", 
         'Breathe out',
-        "Breathe in", 
-        'Breathe out',
-        "Breathe in", 
-        'Breathe out',
-        "Breathe in", 
-        'Breathe out',
-        "Breathe in", 
-        'Breathe out',
-        "Breathe in", 
-        'Breathe out',
     ]
     
-    let index = 0;
+    let cycle = 1;
     let timer = setInterval(onTick, 5000);
     
-    
     function onTick() {
-        // instructionText.classList.remove('fadeInOut');
-        // instructionText.classList.add('fadeInOut');
-
         instructionText.classList.toggle('fadeInOut');
         instructionText.classList.toggle('fadeInOutTwo');
 
-        const sentence = sentences[index];
-        instructionText.textContent = sentence;
-        index++
+        if( cycle % 2 == 0) {
+            instructionText.textContent = sentences[1];
+        } else if( cycle % 2 !== 0) {
+            instructionText.textContent = sentences[0];
+        }
+        // const sentence = sentences[cycle];
+        cycle++
 
-        if(index === sentences.length) {
+        if(cycle === 13) {
             instructionText.classList.remove('fadeInOut');
             instructionText.classList.remove('fadeInOutTwo');
             instructionText.classList.add('fadeOut');
@@ -66,12 +56,14 @@ function modifyText() { // dynamically change .instruction-text
     
     function complete() {
         clearInterval(timer);
-        clickAgain = true;
         timer = null;
     }
+    
+    setTimeout(()=> {
+        instructionText.textContent = "1-minute breathing exercise";
+        clickAgain = true;
+    },65000)
 }
-
-modifyCircle()
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
     const circleWhite = document.querySelector('.circle__white');
