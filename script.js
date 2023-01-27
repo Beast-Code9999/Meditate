@@ -19,29 +19,6 @@ function modifyText() { // dynamically change .instruction-text
     instructionText.classList.add('fadeInOut');
     instructionText.textContent = 'Bring awareness to your breath';
 
-    // for(let i = 0; i <= 5; i++ ) {
-    //     switch( i ) {
-    //         case 1:
-    //             instructionText.classList.remove('fadeInOut');
-    //             change('Breathe in')
-    //             break;
-    //         case 2: 
-    //             instructionText.classList.remove('fadeInOut');
-    //             change('Breathe out')
-    //             break;
-    //         // default:
-    //         //     console.log("hello world")
-    //     }
-    // }
-
-    // function change( message ) {
-    //     setTimeout(() => {
-    //         console.log('3')
-    //         instructionText.classList.add('fadeInOut');
-    //         instructionText.textContent = `${message}`;
-    //     }, 5000 )
-    // }
-
     const sentences = [
         "Breathe in", 
         'Breathe out',
