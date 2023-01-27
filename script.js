@@ -16,16 +16,82 @@ circleParent.addEventListener('click', (e) => {
 
 function modifyText() { // dynamically change .instruction-text 
     const instructionText = document.querySelector('.instruction-text');
-    instructionText.classList.add('fadeInOut')
-    instructionText.textContent = 'Bring awareness to your breath'
+    instructionText.classList.add('fadeInOut');
+    instructionText.textContent = 'Bring awareness to your breath';
 
-    const repeat = setInterval( funct, 5000 )
+    // for(let i = 0; i <= 5; i++ ) {
+    //     switch( i ) {
+    //         case 1:
+    //             instructionText.classList.remove('fadeInOut');
+    //             change('Breathe in')
+    //             break;
+    //         case 2: 
+    //             instructionText.classList.remove('fadeInOut');
+    //             change('Breathe out')
+    //             break;
+    //         // default:
+    //         //     console.log("hello world")
+    //     }
+    // }
 
-    function funct() {
+    // function change( message ) {
+    //     setTimeout(() => {
+    //         console.log('3')
+    //         instructionText.classList.add('fadeInOut');
+    //         instructionText.textContent = `${message}`;
+    //     }, 5000 )
+    // }
 
+    const sentences = [
+        "Breathe in", 
+        'Breathe out',
+        "Breathe in", 
+        'Breathe out',
+        "Breathe in", 
+        'Breathe out',
+        "Breathe in", 
+        'Breathe out',
+        "Breathe in", 
+        'Breathe out',
+        "Breathe in", 
+        'Breathe out',
+    ]
+    
+    let index = 0;
+    let timer = setInterval(onTick, 5000)
+    
+    
+    function onTick() {
+        instructionText.classList.remove('fadeInOut');
+        instructionText.classList.add('fadeInOut');
+
+        const sentence = sentences[index];
+        instructionText.textContent = sentence;
+        index++
+        if(index === sentences.length) {
+            complete();
+            return
+        }
     }
-
-    clearInterval( repeat )
+    
+    function complete() {
+        clearInterval(timer);
+        timer = null;
+    }
+    // setTimeout(() => {
+    //     instructionText.classList.remove('fadeInOut');
+    //     setTimeout(()=> {
+    //         instructionText.classList.add('fadeInOut')
+    //         instructionText.textContent = 'Breathe in';
+    //         setTimeout(()=> {
+    //             instructionText.classList.remove('fadeInOut');
+    //             setTimeout(()=> {
+    //                 instructionText.classList.add('fadeInOut')
+    //                 instructionText.textContent = 'Breathe ';
+    //             })
+    //         }, 2500)
+    //     }, 2500 )
+    // }, 2500)
 }
 
 modifyCircle()
