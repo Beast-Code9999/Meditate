@@ -34,7 +34,7 @@
     height: 25rem; }
   100% {
     width: 5rem;
-    width: 5rem; } }
+    height: 5rem; } }
 
 .fadeInOut {
   animation: fadeInOut 5s; }

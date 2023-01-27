@@ -29,22 +29,18 @@ function modifyText() { // dynamically change .instruction-text
         "Breathe in", 
         'Breathe out',
     ]
-    
     let cycle = 1;
     let timer = setInterval(onTick, 5000);
     
     function onTick() {
         instructionText.classList.toggle('fadeInOut');
         instructionText.classList.toggle('fadeInOutTwo');
-
         if( cycle % 2 == 0) {
             instructionText.textContent = sentences[1];
         } else if( cycle % 2 !== 0) {
             instructionText.textContent = sentences[0];
         }
-        // const sentence = sentences[cycle];
         cycle++
-
         if(cycle === 13) {
             instructionText.classList.remove('fadeInOut');
             instructionText.classList.remove('fadeInOutTwo');
@@ -53,12 +49,10 @@ function modifyText() { // dynamically change .instruction-text
             return
         }
     }
-    
     function complete() {
         clearInterval(timer);
         timer = null;
-    }
-    
+    } 
     setTimeout(()=> {
         instructionText.textContent = "1-minute breathing exercise";
         clickAgain = true;
@@ -78,20 +72,18 @@ function modifyCircle() { // dynamically add circle css to make it expand and sh
     let timer = setInterval(onTick, 5000);
     
     function onTick() {
-
-
         if( cycle % 2 == 0) {
+            circleWhite.classList.remove('expand-circle');
+            circleWhite.classList.add('shrink-circle');
 
         } else if( cycle % 2 !== 0) {
-
+            circleWhite.classList.remove('shrink-circle');
+            circleWhite.classList.add('expand-circle');
         }
-        // const sentence = sentences[cycle];
-        cycle++
-
+        cycle++;
         if(cycle === 13) {
-
             complete();
-            return
+            return;
         }
     }
     
@@ -99,12 +91,11 @@ function modifyCircle() { // dynamically add circle css to make it expand and sh
         clearInterval(timer);
         timer = null;
     }
-    
     setTimeout(()=> {
-        reloadImg.style.display = "flex"
+        reloadImg.style.display = "flex";
+        circleWhite.classList.remove('expand-circle');
+        circleWhite.classList.remove('shrink-circle');
     },65000)
-
-    // console.log(circleWhite, playImg, reloadImg);
 }
 
 // footer script
