@@ -161,6 +161,14 @@ footer img:hover {
     .container {
       width: 45rem;
       height: 50rem; } }
+  @media (max-width: 31.25em) {
+    .container {
+      width: 37rem;
+      height: 45rem; } }
+  @media (max-width: 25em) {
+    .container {
+      width: 30rem;
+      height: 40rem; } }
 
 .share {
   position: absolute;
