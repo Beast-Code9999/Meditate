@@ -20,7 +20,13 @@
   100% {
     opacity: 100; } }
 
-@keyframes expandCircle {}.fadeInOut {
+@keyframes expandCircle {
+  0% {
+    width: 25rem; }
+  100% {
+    width: 5rem; } }
+
+.fadeInOut {
   animation: fadeInOut 5s; }
 
 .fadeInOutTwo {

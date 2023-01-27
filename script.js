@@ -67,12 +67,13 @@ function modifyText() { // dynamically change .instruction-text
 
 function modifyCircle() { // dynamically add circle css to make it expand and shrink
     const circleWhite = document.querySelector('.circle__white');
-    // const circleBlue = document.querySelector('.circle__blue');
     const playImg = document.querySelector('.circle__play');
     const reloadImg = document.querySelector('.circle__reload');
 
     playImg.style.display = "none";
     reloadImg.style.display = "none";
+
+    circleWhite.classList.add('')
     let cycle = 1;
     let timer = setInterval(onTick, 5000);
     

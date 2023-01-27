@@ -16,7 +16,8 @@
 }
 
 @keyframes expandCircle {
-    
+    0% { width: 25rem;}
+    100% { width: 5rem;}
 }
 
 .fadeInOut {
