@@ -22,8 +22,8 @@
 
 @keyframes expandCircle {
   0% {
-    width: 5rem;
-    height: 5rem; }
+    width: 3rem;
+    height: 3rem; }
   100% {
     width: 25rem;
     height: 25rem; } }
@@ -33,8 +33,8 @@
     width: 25rem;
     height: 25rem; }
   100% {
-    width: 5rem;
-    height: 5rem; } }
+    width: 3rem;
+    height: 3rem; } }
 
 .fadeInOut {
   animation: fadeInOut 5s; }
