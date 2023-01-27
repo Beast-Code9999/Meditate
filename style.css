@@ -107,14 +107,14 @@ header {
   width: 100%;
   padding: 2rem;
   position: fixed;
-  top: 1rem; }
+  top: 3rem; }
 
 /* start of footer */
 footer {
   width: 100%;
   margin-top: auto;
   position: fixed;
-  bottom: 1rem;
+  bottom: 3rem;
   padding: 4rem;
   text-align: center;
   font-size: 2rem;
@@ -124,6 +124,9 @@ footer {
   align-items: center;
   /* background-color: lightblue; */
   color: #2196f3; }
+  @media (max-width: 25em) {
+    footer {
+      font-size: 1.6rem; } }
 
 footer a {
   text-decoration: none;
