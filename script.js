@@ -48,11 +48,10 @@ function modifyText() { // dynamically change .instruction-text
         const sentence = sentences[index];
         instructionText.textContent = sentence;
         index++
+        
         if(index === sentences.length) {
             instructionText.classList.remove('fadeInOut');
             instructionText.classList.remove('fadeInOutTwo');
-        }
-        if(index === sentences.length) {
             complete();
             return
         }
