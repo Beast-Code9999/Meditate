@@ -13,6 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include responsive( 800 ) {
+        width: 45rem;
+        height: 50rem;
+    }
 }
 
 .share {
