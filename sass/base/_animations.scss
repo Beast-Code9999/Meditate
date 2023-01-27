@@ -35,7 +35,25 @@
     }
 }
 
+@keyframes expandCircleSmall {
+    0% { 
+        width: 3rem;
+        height: 3rem;}
+    100% { 
+        width: 20rem; 
+        height: 20rem;}
+}
 
+@keyframes shrinkCircleSmall {
+    0% {
+        width: 20rem;
+        height: 20rem;
+    }
+    100% { 
+        width: 3rem; 
+        height: 3rem;
+    }
+}
 
 .fadeInOut {
     animation: fadeInOut 5s;
@@ -51,8 +69,16 @@
 
 .expand-circle {
     animation: expandCircle 5s;
+
+    @include responsive( 300 ) {
+        animation: expandCircleSmall 5s;
+    }
 }
 
 .shrink-circle {
     animation: shrinkCircle 5s;
+
+    @include responsive( 300 ) {
+        animation: shrinkCircleSmall 5s;
+    }
 }

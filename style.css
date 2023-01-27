@@ -36,6 +36,22 @@
     width: 3rem;
     height: 3rem; } }
 
+@keyframes expandCircleSmall {
+  0% {
+    width: 3rem;
+    height: 3rem; }
+  100% {
+    width: 20rem;
+    height: 20rem; } }
+
+@keyframes shrinkCircleSmall {
+  0% {
+    width: 20rem;
+    height: 20rem; }
+  100% {
+    width: 3rem;
+    height: 3rem; } }
+
 .fadeInOut {
   animation: fadeInOut 5s; }
 
@@ -47,9 +63,15 @@
 
 .expand-circle {
   animation: expandCircle 5s; }
+  @media (max-width: 18.75em) {
+    .expand-circle {
+      animation: expandCircleSmall 5s; } }
 
 .shrink-circle {
   animation: shrinkCircle 5s; }
+  @media (max-width: 18.75em) {
+    .shrink-circle {
+      animation: shrinkCircleSmall 5s; } }
 
 *,
 *::before,

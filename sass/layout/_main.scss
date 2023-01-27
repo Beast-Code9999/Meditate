@@ -40,7 +40,6 @@
     & > img {
         width: 3rem;
     }
-
     &:hover {
         cursor: pointer;
     }
@@ -61,7 +60,6 @@
         &:hover {
             cursor: pointer;
         }
-
         @include responsive( 300 ) {
             width: 20rem;
             height: 20rem;
@@ -79,7 +77,6 @@
         &:hover {
             cursor: pointer;
         }
-
         @include responsive( 300 ) {
             width: 20rem;
             height: 20rem;
